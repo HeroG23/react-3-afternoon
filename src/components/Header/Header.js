@@ -9,6 +9,14 @@ import Search from './Search/Search';
 //////////////////////////////////////////////////////// THIS COMPONENT IS BEING RENDERED IN THE *APP* COMPONENT
 
 export default class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state ={
+      text: props.text,
+    }
+  }
+
+
   render() {
     return (
       <section className="Header__parent">
